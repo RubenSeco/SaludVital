@@ -1,1 +1,77 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import "tailwindcss";
+
+@plugin "daisyui" {
+  themes: light --default, dark --prefersdark, night;
+}
+@plugin "@iconify/tailwind4";
+
+@font-face {
+  font-family: Monserrat;
+  src: url("/fonts/montserrat-alternates/MontserratAlternates-Medium.ttf")
+    format("truetype");
+}
+@font-face {
+  font-family: Monserrat-Bold;
+  src: url("/fonts/montserrat-alternates/MontserratAlternates-Bold.ttf")
+    format("truetype");
+}
+
+@theme {
+  /* --color-one: #28516c; */
+
+  --color-one-50: oklch(96.42% 0.013 251.55);
+  --color-one-100: oklch(93.03% 0.026 248.1);
+  --color-one-200: oklch(85.15% 0.059 245.39);
+  --color-one-300: oklch(78.07% 0.092 242.48);
+  --color-one-400: oklch(70.25% 0.109 239.68);
+  --color-one-500: oklch(63.41% 0.098 239.99);
+  --color-one-600: oklch(56.61% 0.087 239.31);
+  --color-one-700: oklch(48.96% 0.075 238.88);
+  --color-one-800: oklch(41.77% 0.065 239.66);
+  --color-one-900: oklch(27.39% 0.042 239.95);
+  --color-one-950: oklch(20.47% 0.032 239.07);
+
+  /* --color-two: #9e8d37; */
+
+  --color-two-50: oklch(95.69% 0.057 94.25);
+  --color-two-100: oklch(91.09% 0.138 97.32);
+  --color-two-200: oklch(81.81% 0.137 98.12);
+  --color-two-300: oklch(72.97% 0.122 98.05);
+  --color-two-400: oklch(64.17% 0.107 98.07);
+  --color-two-500: oklch(55.83% 0.093 97.47);
+  --color-two-600: oklch(47.39% 0.079 97.73);
+  --color-two-700: oklch(38.57% 0.064 97.96);
+  --color-two-800: oklch(30.86% 0.051 97.63);
+  --color-two-900: oklch(22.21% 0.037 96.93);
+  --color-two-950: oklch(17.67% 0.029 99.03);
+
+  /* --color-three: #a43741; */
+
+  --color-three-50: oklch(96.62% 0.011 10.51);
+  --color-three-100: oklch(92.48% 0.024 14.52);
+  --color-three-200: oklch(85.85% 0.049 13.46);
+  --color-three-300: oklch(78.48% 0.081 15.21);
+  --color-three-400: oklch(71.3% 0.12 16.6);
+  --color-three-500: oklch(64.87% 0.16 18);
+  --color-three-600: oklch(57.13% 0.165 18.78);
+  --color-three-700: oklch(49.69% 0.143 18.8);
+  --color-three-800: oklch(37.54% 0.107 18.67);
+  --color-three-900: oklch(26% 0.074 19.18);
+  --color-three-950: oklch(20.56% 0.059 19.21);
+
+  --font-roboto: "Roboto", sans-serif;
+  --font-montserrat: "Monserrat", sans-serif;
+  --font-montserrat-bold: "Monserrat-Bold", sans-serif;
+
+  --shadow-2xs: 0 1px rgb(0 0 0 / 0.05);
+  --shadow-xs: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+    0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+    0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+}
