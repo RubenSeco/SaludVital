@@ -1,4 +1,4 @@
-import { Service, MedicalService, Doctor } from '../interfaces/main.interface';
+import { Service, MedicalService, Doctor, ContactInformation } from '../interfaces/main.interface';
 
 
 export const services: Service[] = [
@@ -106,3 +106,38 @@ export const doctors: Doctor[] = [
     list3: 'Programa de vacunación',
   },
 ];
+
+
+export const contactInformation: ContactInformation[] = [
+  {
+    icon: 'icon-[gis--poi]',
+    title: 'Dirección',
+    description: 'Avenida Principal 1234',
+    list1: 'Campana, CP 2804',
+  },
+  {
+    icon: 'icon-[solar--phone-linear]',
+    title: 'Teléfonos',
+    description: 'General: 123-456-7890',
+    list1: 'Emergencias: (555) 911-HELP',
+    list2: '',
+    list3: '',
+  },
+  {
+    icon: 'icon-[mdi--envelope-outline]',
+    title: 'Correo electrónico',
+    description: 'info@saludvital.com',
+    list1: 'turnos@saludvital.com',
+    list2: '',
+    list3: '',
+  },
+  {
+    icon: 'icon-[tabler--clock]',
+    title: 'Horarios',
+    description: 'Lunes a Viernes: 8:00 AM - 8:00 PM',
+    list1: 'Sábado: 9:00 AM - 5:00 PM',
+    list2: 'Domingo: 10:00 AM - 4:00 PM',
+    list3: 'Emergencias: 24/7',
+  },
+];
+

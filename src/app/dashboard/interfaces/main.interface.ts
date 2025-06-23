@@ -6,6 +6,14 @@ export interface MedicalService {
   list2: string;
   list3: string;
 };
+export interface ContactInformation {
+  title: string;
+  description: string;
+  icon: string;
+  list1?: string;
+  list2?: string;
+  list3?: string;
+};
 
 export interface Service {
   title: string;
