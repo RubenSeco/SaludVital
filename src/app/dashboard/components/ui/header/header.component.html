@@ -1,7 +1,7 @@
 <div
   class="navbar bg-one-300/20 shadow-sm justify-between px-4 md:px-44 font-montserrat"
 >
-  <div class="flex-none">
+  <div class="flex flex-row items-center">
     <button class="btn bg-one-700 border-none text-white md:hidden">
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -17,6 +17,25 @@
         ></path>
       </svg>
     </button>
+    <img
+      src="/logo_color_header.png"
+      alt="logo_color_header"
+      class="hidden md:flex h-12 w-auto"
+    />
+    <ul
+      class="menu hidden md:flex md:menu-horizontal rounded-box space-x-2 mx-4"
+    >
+      @for (item of menuItems; track item.title) {
+
+      <li>
+        <a
+          class="hover:bg-one-700 hover:text-white hover:border-none rounded-md p-4 transition-all font-bold text-base"
+          >{{ item.title }}</a
+        >
+      </li>
+
+      }
+    </ul>
   </div>
   <div class="flex-none space-x-4">
     <!-- <button class="btn bg-one/20 border-none text-black/60 font-montserrat">

@@ -1,4 +1,4 @@
-import { Service, MedicalService, Doctor, ContactInformation } from '../interfaces/main.interface';
+import { Service, MedicalService, Doctor, ContactInformation, MenuItem } from '../interfaces/main.interface';
 
 
 export const services: Service[] = [
@@ -138,6 +138,21 @@ export const contactInformation: ContactInformation[] = [
     list1: 'Sábado: 9:00 AM - 5:00 PM',
     list2: 'Domingo: 10:00 AM - 4:00 PM',
     list3: 'Emergencias: 24/7',
+  },
+];
+
+export const menuItems: MenuItem[] = [
+  {
+    title: 'Inicio',
+  },
+  {
+    title: 'Servicios',
+  },
+  {
+    title: 'Médicos',
+  },
+  {
+    title: 'Contacto',
   },
 ];
 

@@ -31,3 +31,8 @@ export interface Doctor {
   list2: string;
   list3: string;
 }
+
+export interface MenuItem {
+  title: string;
+}
+
