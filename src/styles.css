@@ -19,7 +19,7 @@
 }
 
 @theme {
-  /* --color-one: #28516c; */
+  /* --color-one: #28516c; 700 */
 
   --color-one-50: oklch(96.42% 0.013 251.55);
   --color-one-100: oklch(93.03% 0.026 248.1);
@@ -29,7 +29,7 @@
   --color-one-500: oklch(63.41% 0.098 239.99);
   --color-one-600: oklch(56.61% 0.087 239.31);
   --color-one-700: oklch(48.96% 0.075 238.88);
-  --color-one-800: oklch(41.77% 0.065 239.66);
+  --color-one-800: oklch(41.772% 0.0646 239.698);
   --color-one-900: oklch(27.39% 0.042 239.95);
   --color-one-950: oklch(20.47% 0.032 239.07);
 
@@ -74,4 +74,35 @@
   --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1),
     0 8px 10px -6px rgb(0 0 0 / 0.1);
   --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+
+  --animate-menu-on: menu-on 0.5s ease-in;
+  --animate-menu-off: menu-off 0.5s ease-out;
+
+  @keyframes menu-on {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+
+  @keyframes menu-off {
+    0% {
+      visibility: visible;
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+}
+
+@utility modal {
+  @apply opacity-0;
+  @apply backdrop-blur-sm;
+}
+
+@utility scroll-none {
+  overscroll-behavior-y: contain;
 }

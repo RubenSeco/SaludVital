@@ -1,4 +1,4 @@
-import { Service, MedicalService, Doctor, ContactInformation, MenuItem } from '../interfaces/main.interface';
+import { Service, MedicalService, Doctor, ContactInformation, MenuItem } from '../interfaces/dashboard.interface';
 
 
 export const services: Service[] = [
@@ -144,6 +144,9 @@ export const contactInformation: ContactInformation[] = [
 export const menuItems: MenuItem[] = [
   {
     title: 'Inicio',
+  },
+  {
+    title: 'Nosotros',
   },
   {
     title: 'Servicios',

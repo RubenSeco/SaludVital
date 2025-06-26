@@ -1,0 +1,20 @@
+<section class="w-screen z-20 h-screen invisible absolute top-16 fixed">
+  @if (isMenuOpen()) {
+  <div class="visible animate-menu-on">
+    <app-side-menu />
+  </div>
+  }
+  <!--  -->
+  @else {
+  <div class="animate-menu-off">
+    <app-side-menu />
+  </div>
+  }
+</section>
+
+<main class="min-h-screen w-screen">
+  <app-main />
+</main>
+<footer class="w-screen">
+  <app-footer />
+</footer>

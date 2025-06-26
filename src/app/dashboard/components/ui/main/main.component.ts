@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ContactInformation, Doctor, MedicalService, Service } from '../../../interfaces/main.interface';
+import { ContactInformation, Doctor, MedicalService, Service } from '../../../interfaces/dashboard.interface';
 import { services, medicalServices, doctors, contactInformation } from '../../../data/data-main';
 
 
@@ -9,7 +9,7 @@ import { services, medicalServices, doctors, contactInformation } from '../../..
   templateUrl: './main.component.html',
 })
 export class MainComponent {
-  constructor() {}
+  constructor() { }
 
   services: Service[] = services;
 

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { menuItems, medicalServices, contactInformation } from '../../../data/data-main';
-import { ContactInformation, MedicalService, MenuItem } from '../../../interfaces/main.interface';
+import { ContactInformation, MedicalService, MenuItem } from '../../../interfaces/dashboard.interface';
 
 @Component({
   selector: 'app-footer',
