@@ -144,18 +144,23 @@ export const contactInformation: ContactInformation[] = [
 export const menuItems: MenuItem[] = [
   {
     title: 'Inicio',
+    fragment: 'home'
   },
   {
     title: 'Nosotros',
+    fragment: "us"
   },
   {
     title: 'Servicios',
+    fragment: 'medical-services'
   },
   {
     title: 'Médicos',
+    fragment: 'doctors'
   },
   {
     title: 'Contacto',
+    fragment: 'contact'
   },
 ];
 

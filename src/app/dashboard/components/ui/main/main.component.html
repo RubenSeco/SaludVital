@@ -1,21 +1,21 @@
 <main
-  class="h-full grid grid-cols-4 md:grid-cols-12 gap-4 md:gap-8 mx-4 md:mx-44 mt-4 md:mt-8"
+  class="h-full grid grid-cols-4 md:grid-cols-12 gap-4 md:gap-8 mx-4! md:mx-44 mt-4 md:mt-8"
 >
   <!-- Logo and title-->
-  <section class="col-span-4 md:col-span-6 md:px-4">
+  <section id="home" class="col-span-4 md:col-span-6 md:px-4">
     <div class="grid grid-cols-4 items-center">
       <div class="md:hidden col-span-2 col-start-1">
         <img
           src="logo_color.png"
           alt="logo"
-          class="object-cover bg-one-300/20"
+          class="object-cover bg-primary-300/20"
         />
       </div>
       <div class="col-span-2 col-start-3 md:col-span-6">
         <h1
           class="text-3xl md:text-5xl font-montserrat-bold font-bold text-center text-shadow-lg text-black/60 text-shadow-2xs"
         >
-          Su Salud es Nuestra <span class="text-two-300">Prioridad</span>
+          Su Salud es Nuestra <span class="text-secondary-300">Prioridad</span>
         </h1>
       </div>
     </div>
@@ -27,12 +27,12 @@
     <!-- Buttons -->
     <div class="grid grid-cols-4 md:grid-cols-6 space-y-2 mt-4 md:mt-8">
       <button
-        class="btn bg-one-700 text-white border-none col-span-2 col-start-2 md:col-start-2 md:col-span-4"
+        class="btn bg-primary-700 text-white border-none col-span-2 col-start-2 md:col-start-2 md:col-span-4"
       >
         Turnos
       </button>
       <button
-        class="btn bg-one-200 text-black/70 border-none col-span-2 row-start-2 col-start-2 md:col-start-2 md:col-span-4"
+        class="btn bg-primary-200 text-black/70 border-none col-span-2 row-start-2 col-start-2 md:col-start-2 md:col-span-4"
       >
         Estudios
       </button>
@@ -44,9 +44,9 @@
       @for (item of services; track item.title) {
       <div class="flex flex-col items-center drop-shadow-2xl/30">
         <div
-          class="h-12 w-12 rounded-full bg-one-300/50 p-2 items-center flex justify-center"
+          class="h-12 w-12 rounded-full bg-primary-300/50 p-2 items-center flex justify-center"
         >
-          <span class="{{ item.icon }} text-4xl text-one"></span>
+          <span class="{{ item.icon }} text-4xl text-primary"></span>
         </div>
         <p class="text-xs text-center">{{ item.title }}</p>
         <p class="text-xs text-black/70 text-center">{{ item.description }}</p>
@@ -68,9 +68,12 @@
   </section>
 
   <!-- Medical Services-->
-  <section class="col-span-4 md:col-span-12 mt-4 md:mt-8 space-y-4">
+  <section
+    id="medical-services"
+    class="col-span-4 md:col-span-12 mt-4 md:mt-8 space-y-4"
+  >
     <h1
-      class="text-center text-2xl md:text-3xl font-bold text-two-500 text-shadow-lg"
+      class="text-center text-2xl md:text-3xl font-bold text-secondary-500 text-shadow-lg"
     >
       Nuestros servicios médicos
     </h1>
@@ -82,12 +85,12 @@
     <article class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4 md:mt-8">
       @for (item of medicalServices; track item.title) {
 
-      <div class="card w-full bg-one-100 drop-shadow-xl/30">
+      <div class="card w-full bg-primary-100 drop-shadow-xl/30">
         <div class="card-body place-items-center">
           <div
-            class="h-12 w-12 rounded-full bg-one-300/50 p-2 items-center flex justify-center"
+            class="h-12 w-12 rounded-full bg-primary-300/50 p-2 items-center flex justify-center"
           >
-            <span class="text-2xl text-one {{ item.icon }}"></span>
+            <span class="text-2xl text-primary {{ item.icon }}"></span>
           </div>
           <h2 class="card-title text-center">{{ item.title }}</h2>
           <p class="card-text text-center text-black/80">
@@ -106,9 +109,12 @@
   </section>
 
   <!-- Doctors -->
-  <section class="col-span-4 md:col-span-12 mt-4 md:mt-8 space-y-4">
+  <section
+    id="doctors"
+    class="col-span-4 md:col-span-12 mt-4 md:mt-8 space-y-4"
+  >
     <h1
-      class="text-center text-2xl md:text-3xl font-bold text-two-500 text-shadow-lg"
+      class="text-center text-2xl md:text-3xl font-bold text-secondary-500 text-shadow-lg"
     >
       Conozca a nuestros médicos expertos
     </h1>
@@ -120,7 +126,7 @@
     <article class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4 md:mt-8">
       @for (item of doctors; track item.name) {
 
-      <div class="card bg-one-100 rounded-2xl drop-shadow-xl/30">
+      <div class="card bg-primary-100 rounded-2xl drop-shadow-xl/30">
         <div class="card-body p-0">
           <img
             class="w-full h-64 md:h-96 object-cover mb-2 rounded-tl-2xl rounded-tr-2xl"
@@ -131,7 +137,7 @@
             {{ item.name }}
           </h2>
           <p
-            class="text-sm card-text text-one-500 pl-4 md:pl-8 text-one font-bold"
+            class="text-sm card-text text-primary-500 pl-4 md:pl-8 text-primary font-bold"
           >
             {{ item.specialty }}
           </p>
@@ -148,7 +154,7 @@
           </ul>
         </div>
         <button
-          class="btn bg-one-700 text-white border-none mx-4 md:mx-8 mb-4 md:mb-8"
+          class="btn bg-primary-700 text-white border-none mx-4 md:mx-8 mb-4 md:mb-8"
         >
           Turnos
         </button>
@@ -160,10 +166,11 @@
   <!-- Información de contacto -->
 
   <section
-    class="col-span-4 md:col-span-12 mt-4 md:mt-8 space-y-4 bg-one-300/20 my-4 md:my-8 py-4 md:py-8"
+    id="contact"
+    class="col-span-4 md:col-span-12 mt-2 md:mt-4 space-y-4 bg-primary-300/20 my-4 md:my-8 py-4 md:py-8 rounded-lg"
   >
     <h1
-      class="text-center text-2xl md:text-3xl font-bold text-two-500 text-shadow-lg"
+      class="text-center text-2xl md:text-3xl font-bold text-secondary-500 text-shadow-lg"
     >
       Pongase en contacto con nosotros
     </h1>
@@ -173,7 +180,7 @@
     </p>
 
     <div class="grid grid-cols-4 gap-4">
-      <article class="col-span-4 md:col-span-2 space-y-4">
+      <article class="col-span-4 md:col-span-2 space-y-4 md:ml-2">
         <h2 class="text-xl font-bold px-4 text-shadow-xl/30">
           Información de contacto
         </h2>
@@ -181,9 +188,9 @@
         <div class="card w-full bg-white drop-shadow-xl/30">
           <div class="card-body grid grid-cols-4 md:grid-cols-6">
             <div
-              class="h-12 w-12 rounded-full bg-one-300/50 p-2 items-center flex justify-center"
+              class="h-12 w-12 rounded-full bg-primary-300/50 p-2 items-center flex justify-center"
             >
-              <span class="text-2xl text-one {{ item.icon }}"></span>
+              <span class="text-2xl text-primary {{ item.icon }}"></span>
             </div>
             <div class="col-span-3 col-start-2">
               <h2 class="card-title">{{ item.title }}</h2>
@@ -201,7 +208,7 @@
         }
       </article>
 
-      <article class="col-span-4 md:col-span-2 md:col-start-3">
+      <article class="col-span-4 md:col-span-2 md:col-start-3 md:mr-2">
         <fieldset
           class="fieldset bg-white rounded-box w-full p-4 drop-shadow-xl/30"
         >
@@ -212,13 +219,13 @@
             <label class="label font-bold">Nombre</label>
             <input
               type="text"
-              class="input bg-white border-one-200"
+              class="input bg-white border-primary-200"
               placeholder="Juan"
             />
             <label class="label font-bold">Apellido</label>
             <input
               type="text"
-              class="input bg-white border-one-200"
+              class="input bg-white border-primary-200"
               placeholder="Perez"
             />
           </div>
@@ -226,31 +233,31 @@
           <label class="label font-bold mt-4">Correo electrónico</label>
           <input
             type="email"
-            class="input bg-white border-one-200 w-full"
+            class="input bg-white border-primary-200 w-full"
             placeholder="juan@correo.com"
           />
 
           <label class="label font-bold mt-4">Teléfono</label>
           <input
             type="tel"
-            class="input bg-white border-one-200 w-full"
+            class="input bg-white border-primary-200 w-full"
             placeholder="Teléfono"
           />
 
           <label class="label font-bold mt-4">Motivo</label>
           <input
             type="text"
-            class="input bg-white border-one-200 w-full"
+            class="input bg-white border-primary-200 w-full"
             placeholder=""
           />
 
           <label class="label font-bold mt-4">Mensaje</label>
           <textarea
-            class="textarea bg-white border-one-200 w-full"
+            class="textarea bg-white border-primary-200 w-full"
             placeholder=""
           ></textarea>
 
-          <button class="btn bg-one-700 mt-4 text-white border-none">
+          <button class="btn bg-primary-700 mt-4 text-white border-none">
             Enviar Mensaje
           </button>
         </fieldset>
