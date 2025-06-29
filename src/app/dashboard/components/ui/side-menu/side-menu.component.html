@@ -2,13 +2,21 @@
   <div class="bg-primary-100 h-screen w-2/3 z-30">
     <ul class="menu flex menu-vertical">
       @for (item of menuItems; track item.title) {
+      <!--  -->
       <li>
+        @if (item.title==="Nosotros") {
+        <a routerLink="/history" class="font-bold text-base pl-8">Nosotros</a>
+        }
+        <!--  -->
+        @else {
         <a
           RouterLink="/main"
           href="#{{ item.fragment }}"
           class="font-bold text-base pl-8"
           >{{ item.title }}</a
         >
+
+        }
       </li>
       }
     </ul>

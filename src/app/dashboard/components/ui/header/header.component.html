@@ -19,9 +19,9 @@
       @for (item of menuItems; track item.title) {
       <li>
         <a
-          routerLink="/main"
+          RouterLink="/main"
           href="#{{ item.fragment }}"
-          class="hover:bg-primary-700 hover:text-white hover:border-none rounded-md p-4 transition-all font-bold text-base"
+          class="font-bold text-base hover:md:bg-primary-700 p-2 hover:text-white hover:border-none hover:shadow-2xl"
           >{{ item.title }}</a
         >
       </li>
@@ -32,13 +32,15 @@
     <!-- <button class="btn bg-primary/20 border-none text-black/60">
       Servicios
     </button> -->
+
     <button
-      class="btn bg-primary-700 text-white"
+      class="btn bg-primary-700 text-white hidden md:flex"
       onclick="my_modal_1.showModal()"
       (click)="closeMenu()"
     >
       Turnos
     </button>
+
     <dialog id="my_modal_1" class="modal">
       <app-modal-appointment />
     </dialog>

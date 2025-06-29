@@ -3,6 +3,7 @@ import { menuItems } from '../../../data/data-main';
 import { MenuItem } from '../../../interfaces/dashboard.interface';
 import { DashboardService } from '../../../dashboard.service';
 import { ModalAppointmentComponent } from "../modal-appointment/modal-appointment.component";
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-header',

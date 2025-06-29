@@ -147,16 +147,16 @@ export const menuItems: MenuItem[] = [
     fragment: 'home'
   },
   {
-    title: 'Nosotros',
-    fragment: "us"
-  },
-  {
     title: 'Servicios',
     fragment: 'medical-services'
   },
   {
     title: 'Médicos',
     fragment: 'doctors'
+  },
+  {
+    title: 'Nosotros',
+    fragment: 'history'
   },
   {
     title: 'Contacto',

@@ -6,7 +6,7 @@ import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-side-menu',
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './side-menu.component.html',
 })
 export class SideMenuComponent {
@@ -17,6 +17,7 @@ export class SideMenuComponent {
 
   dashboardService = inject(DashboardService);
   menuItems: MenuItem[] = menuItems;
+
 
 
 }

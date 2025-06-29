@@ -34,6 +34,6 @@ export interface Doctor {
 
 export interface MenuItem {
   title: string;
-  fragment: string;
+  fragment?: string;
 }
 
