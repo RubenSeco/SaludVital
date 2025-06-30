@@ -109,9 +109,10 @@
 }
 
 @utility btn-primary {
-  @apply bg-primary-800 text-white ring-0 border-none shadow-black drop-shadow-lg;
+  @apply bg-primary-800! text-white! ring-0 border-none shadow-black drop-shadow-lg;
 }
 
 @utility btn-secondary {
-  @apply bg-primary-200 text-black/70 border-none bg-primary-200 ring-0 shadow-black drop-shadow-md;
+  @apply bg-primary-200! text-black/70! ring-0 border-none shadow-black drop-shadow-md;
 }
+

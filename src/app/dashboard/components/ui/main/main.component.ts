@@ -1,13 +1,16 @@
 import { Component } from '@angular/core';
-import { ContactInformation, Doctor, MedicalService, Service } from '../../../interfaces/dashboard.interface';
-import { services, medicalServices, doctors, contactInformation } from '../../../data/data-main';
+import { Service } from '../../../interfaces/dashboard.interface';
+import { services } from '../../../data/data-main';
 import { RouterModule } from '@angular/router';
 import { routes } from '../../../../app.routes';
+import { MedicalServicesComponent } from "../medical-services/medical-services.component";
+import { DoctorsComponent } from "../doctors/doctors.component";
+import { ContactFormComponent } from "../contact-form/contact-form.component";
 
 
 @Component({
   selector: 'app-main',
-  imports: [RouterModule],
+  imports: [RouterModule, MedicalServicesComponent, DoctorsComponent, ContactFormComponent],
   templateUrl: './main.component.html',
 })
 export class MainComponent {
@@ -20,10 +23,8 @@ export class MainComponent {
 
   services: Service[] = services;
 
-  medicalServices: MedicalService[] = medicalServices;
 
-  doctors: Doctor[] = doctors;
 
-  contactInformation: ContactInformation[] = contactInformation;
+
 }
 

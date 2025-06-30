@@ -1,0 +1,46 @@
+    <h1
+      class="text-center text-2xl md:text-3xl font-bold text-secondary-500 text-shadow-lg"
+    >
+      Conozca a nuestros médicos expertos
+    </h1>
+    <p class="text-center text-shadow-2xs text-black/70 px-4 md:px-8">
+      Nuestros equipos de profesionales médicos experimentados se dedican a
+      brindarle atención médica de la más alta calidad.
+    </p>
+
+    <article class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4 md:mt-8">
+      @for (item of doctors; track item.name) {
+
+      <div class="card bg-primary-100 rounded-2xl drop-shadow-xl/30">
+        <div class="card-body p-0">
+          <img
+            class="w-full h-64 md:h-96 object-cover mb-2 rounded-tl-2xl rounded-tr-2xl"
+            src="{{ item.image }}"
+            alt="{{ item.name }}"
+          />
+          <h2 class="text-lg card-title font-bold pl-4 md:pl-8">
+            {{ item.name }}
+          </h2>
+          <p
+            class="text-sm card-text text-primary-500 pl-4 md:pl-8 text-primary font-bold"
+          >
+            {{ item.specialty }}
+          </p>
+          <p class="text-black/70 pl-4 md:pl-8 text-xs">
+            {{ item.experience }}
+          </p>
+          <h2 class="pl-4 md:pl-8 font-bold text-xs">Especialidades</h2>
+          <ul
+            class="list-disc list-inside text-black/80 mb-4 pl-4 md:pl-8 text-xs"
+          >
+            <li class="">{{ item.list1 }}</li>
+            <li class="">{{ item.list2 }}</li>
+            <li class="">{{ item.list3 }}</li>
+          </ul>
+        </div>
+        <button class="btn btn-primary mx-4 md:mx-8 mb-4 md:mb-8">
+          Turnos
+        </button>
+      </div>
+      }
+    </article>

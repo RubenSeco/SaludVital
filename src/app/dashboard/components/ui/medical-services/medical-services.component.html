@@ -1,0 +1,34 @@
+<h1
+  class="text-center text-2xl md:text-3xl font-bold text-secondary-500 text-shadow-lg"
+>
+  Nuestros servicios médicos
+</h1>
+<p class="text-center text-shadow-2xs text-black/70 px-4 md:px-8">
+  Brindamos atención médica integral , utilizando tecnología de última
+  generación y un equipo de profesionales con amplia experiencia.
+</p>
+
+<article class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4 md:mt-8">
+  @for (item of medicalServices; track item.title) {
+
+  <div class="card w-full bg-primary-100 drop-shadow-xl/30">
+    <div class="card-body place-items-center">
+      <div
+        class="h-12 w-12 rounded-full bg-primary-300/50 p-2 items-center flex justify-center"
+      >
+        <span class="text-2xl text-primary {{ item.icon }}"></span>
+      </div>
+      <h2 class="card-title text-center">{{ item.title }}</h2>
+      <p class="card-text text-center text-black/80">
+        {{ item.description }}
+      </p>
+      <ul class="list-disc list-inside text-black">
+        <li class="text-center">{{ item.list1 }}</li>
+        <li class="text-center">{{ item.list2 }}</li>
+        <li class="text-center">{{ item.list3 }}</li>
+      </ul>
+    </div>
+  </div>
+
+  }
+</article>
