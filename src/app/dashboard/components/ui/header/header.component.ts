@@ -4,10 +4,11 @@ import { MenuItem } from '../../../interfaces/dashboard.interface';
 import { DashboardService } from '../../../dashboard.service';
 import { ModalAppointmentComponent } from "../modal-appointment/modal-appointment.component";
 import { RouterLink } from '@angular/router';
+import { HeaderNavComponent } from "../header-nav/header-nav.component";
 
 @Component({
   selector: 'app-header',
-  imports: [ModalAppointmentComponent],
+  imports: [ModalAppointmentComponent, HeaderNavComponent],
 
   templateUrl: './header.component.html',
 })
@@ -17,7 +18,6 @@ export class HeaderComponent {
 
   }
 
-  menuItems: MenuItem[] = menuItems;
 
   dashboardService = inject(DashboardService);
 

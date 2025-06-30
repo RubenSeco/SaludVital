@@ -1,0 +1,26 @@
+<div>
+  <ul class="menu menu-vertical md:menu-horizontal space-x-2 mx-4">
+    @for (item of menuItems; track item.title) {
+    <!--  -->
+    <li>
+      @if (item.title==="Nosotros") {
+      <a
+        routerLink="/history"
+        class="font-bold text-base pl-8 md:p-2 md:hover:btn-secondary"
+        >Nosotros</a
+      >
+      }
+      <!--  -->
+      @else {
+      <a
+        RouterLink="/main"
+        href="#{{ item.fragment }}"
+        class="font-bold text-base pl-8 md:p-2 md:hover:btn-secondary"
+        >{{ item.title }}</a
+      >
+
+      }
+    </li>
+    }
+  </ul>
+</div>

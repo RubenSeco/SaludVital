@@ -2,11 +2,11 @@ import { Component, inject } from '@angular/core';
 import { DashboardService } from '../../../dashboard.service';
 import { MenuItem } from '../../../interfaces/dashboard.interface';
 import { menuItems } from '../../../data/data-main';
-import { RouterLink } from '@angular/router';
+import { HeaderNavComponent } from "../header-nav/header-nav.component";
 
 @Component({
   selector: 'app-side-menu',
-  imports: [RouterLink],
+  imports: [ HeaderNavComponent],
   templateUrl: './side-menu.component.html',
 })
 export class SideMenuComponent {
