@@ -1,9 +1,6 @@
 import { Component, ElementRef, HostListener, inject } from '@angular/core';
-import { menuItems } from '../../../data/data-main';
-import { MenuItem } from '../../../interfaces/dashboard.interface';
 import { DashboardService } from '../../../dashboard.service';
 import { ModalAppointmentComponent } from "../modal-appointment/modal-appointment.component";
-import { RouterLink } from '@angular/router';
 import { HeaderNavComponent } from "../header-nav/header-nav.component";
 
 @Component({
@@ -37,9 +34,4 @@ export class HeaderComponent {
       }
     }
   }
-
-
-
-
-
 }

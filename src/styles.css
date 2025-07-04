@@ -116,3 +116,10 @@
   @apply bg-primary-200! text-black/70! ring-0 border-none shadow-black drop-shadow-md;
 }
 
+@utility input {
+  @apply border-primary-300 bg-white! outline-primary-200;
+}
+
+@utility textarea {
+  @apply border-primary-300 bg-white! outline-primary-200;
+}
